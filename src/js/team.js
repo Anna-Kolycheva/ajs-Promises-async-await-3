@@ -14,7 +14,7 @@ export default class Team {
 
     return {
       next() {
-        if (current <= number) {
+        if (current < number) {
           const member = members[current];
           current += 1;
           return {
